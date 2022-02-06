@@ -4,6 +4,9 @@
   <title>WEB1 - css</title>
   <meta charset="utf-8">
   <style>
+    body{
+      margin:0;
+    }
     a {
       color:black;
       text-decoration: none;
@@ -11,16 +14,31 @@
     h1 {
       font-size:50px;
       text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding: 20px;
+    }
+    #grid ol {
+      border-right:1px solid gray;
+      width:150px;
+      margin:0;
+      padding: 40px;
+      padding-left: 50px;
+      padding-right: 20px;
     }
     li {
       font-size: 25px;
       font-weight: bold;
     }
-    .saw {
-      color:gray;
-    }
     #active {
       color:red;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 400px 1fr;
+    }
+    #article a {
+      color:Crimson;
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -35,17 +53,24 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw">html</a></li>
-    <li><a href="2.html" id="active">css</a></li>
-    <li><a href="3.html" class="saw">javascript</a></li>
-  </ol>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">HTML</a></li>
+      <li><a href="2.html" id="active">CSS</a></li>
+      <li><a href="3.html" class="saw">JavaScript</a></li>
+    </ol>
 
-  <img src="https://media.vlpt.us/images/jodheeee/post/52df421b-371d-497b-9860-fa77ffd18cef/WEB%20%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF.jpeg"
-  width="350">
+    <div id="article">
+      <img src="https://media.vlpt.us/images/jodheeee/post/52df421b-371d-497b-9860-fa77ffd18cef/WEB%20%E1%84%8A%E1%85%A5%E1%86%B7%E1%84%82%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF.jpeg"
+      width="350">
 
-  <h2>CSS</h2>
+      <h2>CSS</h2>
 
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ok0bBJPtgJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ok0bBJPtgJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
+      <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+
+      For more details ---> Click <a href="https://www.w3schools.com/css/default.asp" target="_blank">HERE!</a>
+    </div>
+  </div>
 </body>
